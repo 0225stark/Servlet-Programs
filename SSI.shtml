@@ -1,0 +1,30 @@
+<!--#echo var="DATE_LOCAL" -->
+<br><br>
+<!--#config timefmt="%A %B %d %m %Y" -->
+<!--#echo var="DATE_LOCAL" -->
+<br><br>
+<!--#printenv -->
+<br><br>
+<!--#fsize file="SSI.shtml" -->
+<br><br>
+<!--#flastmod file="SSI.shtml" -->
+<br><br>
+<!--#include virtual="servlet/HelloWorld" -->
+<br><br>
+<!--#set var="SSI" value="Server Side Include" -->
+<br><br>
+<!--#set var="sum" value="0" -->
+<br><br>
+
+<!--#config timefmt="%A" -->
+<!--#if expr="$DATE_LOCAL = /Sunday/" -->
+<p>Today is Sunday</p>
+<!--#elif expr="$DATE_LOCAL = /Saturday/" -->
+<p>Today is Saturday</p>
+<!--#elif expr="$DATE_LOCAL = /Wednesday/" -->
+<p>Today is Wednesday</p>
+<!--#else -->
+<p>Week day</p>
+<!--#endif -->
+
+<br><br>
