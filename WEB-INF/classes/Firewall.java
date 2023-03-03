@@ -5,8 +5,7 @@ public class Firewall implements Filter {
 	public void init(FilterConfig config) throws ServletException {
 		this.config = config;
 	}
-	public void doFilter(ServletRequest request, ServletResponse response,
-		FilterChain chain) throws IOException, ServletException {
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		if (request.getRemoteAddr().equals("127.0.0.1")) 
 			chain.doFilter(request, response);
 	}

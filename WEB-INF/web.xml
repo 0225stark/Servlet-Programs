@@ -72,4 +72,13 @@
     <url-pattern>/servlet/HelloWorld</url-pattern>
   </filter-mapping>
 
+  <servlet>
+    <servlet-name>RetriveName</servlet-name>
+    <servlet-class>RetriveName</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RetriveName</servlet-name>
+    <url-pattern>/servlet/name</url-pattern>
+  </servlet-mapping>
+
 </web-app>
